@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+body {
+    background-image: url(./Images/background.png);
+    background-repeat: no-repeat;
+}
+
+.nav-bar {
+    background-size: contain;
+    position: relative;
+}
+
+.nav-bar img {
+    margin: 1rem 0rem 0 5rem;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    padding: 8px 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header-text {
+    text-align: center;
+    color: white;
+    font-size: 120px;
+    font-weight: 700;
+    margin: 7rem 0 -2rem 5.7rem;
+}
+
+.header-p {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    word-spacing: 57px;
+    margin-left: 7rem;
+    margin-top: .3rem;
+}
+
+.first-btn {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 48%;
+    border: 1px solid #c271ff;
+    border-radius: 22px;
+    background: #C271FF;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
+    width: 162px;
+    height: 44px;
+    cursor: pointer;
+    /* margin-right: 50%; */
+    margin-top: 3%;
+}
+
+.first-btn a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header2-text {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 200;
+    color: #fff;
+    margin-top: 9rem;
+    margin-left: 8.9rem;
+}
+span {
+    color: #c271ff;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.pro-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 7%;
+    margin-top: 6.2rem;
+}
+
+.ps-name {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 27px;
+}
+
+.ps-text {
+    width: 150px; /* worked like <br> tag */
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 24px;
+}
+
+/* ----- Second section = Testimonial ----- */
+
+.testimonial {
+    display: flex;
+    background-color:#C271FF;
+    height: 400px;
+    margin-top: 5rem;
+}
+
+.testimonial div{
+    width: 943px;
+    height: 160px;
+    top: 1201px;
+}
+
+.testimonial img {
+    padding-top: 8.5rem;
+    padding-left: 18rem;
+}
+
+.quote {
+    color: #fff;
+    margin: 8rem 20rem 0 -2.5%;
+    padding-right: -6rem;
+    font-size: 16px;
+    font-weight: 200;
+    width: 100px;
+    line-height: 33.6px;
+}
+
+.name {
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+
+.title {
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* ----- Third section = Video Tutorials ----- */
+
+.videos {
+    background-color: #FFFFFF;
+}
+
+.videos h1 {
+    color: #071629;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 200;
+    margin-top: 3.6rem;
+    margin-bottom: 2rem;
+}
+
+.videos-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 7rem 70px 7rem;
+    cursor: pointer;
+}
+
+#hover:hover {
+    box-shadow: 0 0 20px 0px rgba(194, 32, 172, 0.30);
+}
+
+.videos-div h2 {
+    color: #071629;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 1rem;
+    word-wrap: break-word;
+}
+
+.videos-div p {
+    color: rgba(7, 22, 41, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 1rem;
+}
+
+.vp {
+    display: flex;
+    flex-direction: row;
+}
+.vp img {
+    margin: 15px 11px 15px 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.vp h3 {
+    margin-top: 15px;
+    color: #C271FF;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+.rating {
+    display: flex;
+    flex-direction: row;
+}
+.rating p {
+    margin: -4px 0 0 90px;
+    color: #C271FF;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+
+/* ----- Fourth section = Free membership ----- */
+
+.membership {
+    background-color: #071629;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+    color: #ffffff;
+}
+
+.membership h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 200;
+    margin: 1rem 0;
+}
+
+.membership-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin: 5% 0;
+}
+
+.membership-div img {
+    margin-bottom: 1rem;
+    width: 43.666px;
+    height: 35.353px;
+    flex-shrink: 0;
+}
+
+.membership-div h2 {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.membership-div p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.second-btn {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #c271ff;
+    border-radius: 22px;
+    background: #C271FF;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
+    width: 162px;
+    height: 44px;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+.second-btn a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ----- Fifth section = F.A.Q. ----- */
+
+.faq {
+    padding: 50px 100px;
+}
+
+.faq h1 {
+    color: #071629;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.faq-div {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 50px;
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 3%;
+}
+
+.faq-item h2 {
+    color: #071629;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.faq-item p {
+    color: rgba(7, 22, 41, 0.50);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+} 
+
+#left {
+    display: flex;
+    float: left;
+} 
+
+#right {
+    display: flex;
+    float: right;
+    padding-left: 5rem;
+}
+
+/* ----- Sixth section = Footer ----- */
+
+footer {
+    background-color: #071629;
+    padding: 5rem 185px 2.4rem 185px;
+    margin-top: 38rem;
+}
+
+.footer-logo {
+    width: 8rem;
+}
+
+.footer-sm {
+    float: right;
+    word-spacing: 1rem;
+}
+
+footer p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0.3517;
+    margin-top: 3rem;
+}
