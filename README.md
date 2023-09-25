@@ -1,6 +1,6 @@
 # CSS Advanced - Landing Page
 
-![Project Preview](Images/page-review.jpg)
+![Project Preview](./Images/My-Get-schooled-%20landing-page.png)
 
 ## Description
 
