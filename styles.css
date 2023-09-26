@@ -117,6 +117,102 @@ span {
     line-height: 24px;
 }
 
+@media(max-width: 700px) {
+    body {
+        background-image: url(./Images/background.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .nav-bar {
+        position: relative;
+    }
+
+    .nav-bar img {
+        width: 7rem;
+        margin: 1rem 0rem 0 2rem;
+    }
+    
+    .nav-bar {
+        display: flex;
+        padding-right: 9%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-links a {
+        padding-top: 3%;
+        font-size: 13px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    
+    .header-text {
+        text-align: center;
+        color: white;
+        font-size: 53px;
+        font-weight: 700;
+        margin: 1.6rem 5rem -.6rem 5.7rem;
+    }
+    
+    .header-p {
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 9px;
+        font-weight: 700;
+        word-spacing: 20px;
+        margin-left: 1.4rem;
+    }
+    
+    .first-btn {
+        display: inline-block;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 48%;
+        border: 1px solid #c271ff;
+        border-radius: 22px;
+        background: #C271FF;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
+        width: 100px;
+        height: 34px;
+        cursor: pointer;
+        margin-top: 3%;
+    }
+    
+    .first-btn a{
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .header2-text {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 200;
+        color: #fff;
+        margin-top: 9rem;
+        margin-left: 8.9rem;
+    }
+    span {
+        color: #c271ff;
+        font-weight: 600;
+        font-size: 28px;
+    }
+    
+    .pro-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 7%;
+        margin-top: 6.2rem;
+    }
+}
+
 /* ----- Second section = Testimonial ----- */
 
 .testimonial {
