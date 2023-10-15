@@ -1,8 +1,12 @@
+# ALU_HTML-CSS-Contest_Group-11
+
+Our team was tasked with developing and designing a website showcasing the basic skills we've learned in HTML and CSS including making the site responsive and we were not permitted to use a Content Management System or front-end framework/libraries to develop our website. Enjoy your read!
+
 # Nevents - Alumni Connect
 
 Nevents is a web application designed to connect alumni with exciting events and opportunities within the African Leadership University (ALU) community. This README provides an overview of the project, its features, setup instructions, and how to use it.
 
-![Nevents Landing Page](./img/iPhone-view-Nevents.jpg) ![Nevents Landing Page](./img/Nevents.png)
+![Nevents Landing Page](./img/Nevents.png)
 
 ## Table of Contents
 
@@ -36,10 +40,10 @@ These instructions will help you set up and run the project locally on your mach
 
 ```bash
 # Clone the repository
-git clone https://github.com/eadewusic/eadewusic.github.io.git
+git clone https://github.com/maxprodigy/ALU_HTML-CSS-Contest_Group-11.git
 
-# Change directory to the project folder
-cd Nevents
+# Change directory to the project folder (if any)
+cd nevents-alumni-connect
 
 # Install dependencies (if any)
 npm install
@@ -68,7 +72,7 @@ Please read [CONTRIBUTING.md](https://contributing.md/) for details on our code 
 
 3. Make your changes and commit them with descriptive messages.
 
-4. Submit a pull request to the `main` branch.
+4. Submit a pull request to the `master` branch.
 
 ## License
 
