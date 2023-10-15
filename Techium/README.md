@@ -33,7 +33,7 @@ npm install
 
 To use the "Responsive Design" landing page, follow these instructions:
 
-1. Include the HTML file in your project/ rather copy the `10-index.html` file from `responsive_design`:
+1. Include the HTML file in your project/ rather copy the `article.html` file from `Techium`:
 
    ```html
    <link rel="stylesheet" href="./article.css" />
