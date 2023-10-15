@@ -23,7 +23,7 @@ To set up and run this project locally, follow these steps:
 git clone https://github.com/eadewusic/alu-web_front_end.git
 
 # Change directory to the project folder
-cd responsive_design
+cd Techium
 
 # Install dependencies (if any)
 npm install
@@ -36,7 +36,7 @@ To use the "Responsive Design" landing page, follow these instructions:
 1. Include the HTML file in your project/ rather copy the `10-index.html` file from `responsive_design`:
 
    ```html
-   <link rel="stylesheet" href="./10-styles.css" />
+   <link rel="stylesheet" href="./article.css" />
    ```
 
 2. Customise the page according to your needs.
