@@ -73,7 +73,7 @@ Please read [CONTRIBUTING.md](https://contributing.md/) for details on our code 
 
 3. Make your changes and commit them with descriptive messages.
 
-4. Submit a pull request to the `master` branch.
+4. Submit a pull request to the `main` branch.
 
 ## License
 
