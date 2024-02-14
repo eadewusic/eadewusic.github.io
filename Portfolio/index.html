@@ -3,16 +3,227 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Site - Eunice Adewusi Climiradi</title>
+
+    <!----- Google Font ----->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700;&display=swap"
+        rel="stylesheet">
+
+    <!----- Font Awesome ----->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!----- My CSS ----->
+
     <link rel="stylesheet" href="./styles.css">
+
 </head>
 
 <body>
-    <div>
-        <h2>Coming Soon!</h2>
-        <p>Yoo... Watch out</p>
-    </div>
+
+    <!--- Header/ Navigation Bar --->
+
+    <header>
+        <nav class="nav-bar">
+            <div class="max-width">
+                <div class="logo"><a href="#">Techie<span>Climi_</span></a></div>
+                <div class="nav-links" id="nav-links">
+
+                    <ul class="unav">
+
+                        <li><a class="active" href="#hobbies">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--- Home Page-->
+
+    <main class="hero" id="hero">
+        <div class="max-width">
+            <div class="hero-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Eunice Adewusi</div>
+                <div class="text-3">and I'm a <span>Front-End Developer</span></div>
+            </div>
+            <a href="contact.html" class="btn">Contact Me</a>
+        </div>
+
+        <div class="pic">
+            <img src="./images/Eunice.png" alt="A Picture of me">
+        </div>
+    </main>
+
+
+    <!--- Hobbies Section-->
+
+    <section class="hobbies" id="hobbies">
+        <div class="hobbies-img">
+            <img src="./images/me.png" alt="Myself">
+        </div>
+
+        <div class="hobbies-content">
+            <div class="hobbies-text">
+                <span>my hobbies</span>
+                <h2>Things I Love Doing</h2>
+                <p>Worshipping, Public Speaking, Coding, Eating Chocolates 🍫🍫 <br> Taking Notes, Going out for events,
+                    Preaching the Tech Gospel. <br> I love enlightening, nurturing, empowering, educating females <br>
+                    to break off stereotypes and make the uneven, even!</p>
+
+                <a href="#" class="btn">Read More...</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--- Priorities Section-->
+
+    <section class="priorities">
+        <div class="heading">
+            <span>--- my priorities ---</span>
+            <h2>These I hold in high esteem</h2>
+        </div>
+
+        <div class="priorities-container">
+            <div class="p-box">
+                <img id="fyge" src="./images/fyge.png" alt="FYGE's Logo">
+                <h3>Empowerment</h3>
+                <p>I am a Girl-Child Advocate who <br> prioritizes empowering females to <br> become Global ChangeMakers
+                    & <br> bridging the digital gender divide.</p>
+            </div>
+
+            <div class="p-box">
+                <img id="girl" src="./images/girl.png" alt="Girl">
+                <h3>Leadership</h3>
+                <p>I have always been and want to lead. <br> Thus, it's a default priority for me, to <br> be the best
+                    always and lead as a <br> good and invaluable example.</p>
+            </div>
+
+            <div class="p-box">
+                <img id="climi" src="./images/fyge.png" alt="Climi">
+                <h3>Belief</h3>
+                <p>Everywhere including the internet is <br> toxic, while I prioritize my peace of <br> mind and mental
+                    health, I am careful <br> about my beliefs and what I assimilate.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--- Other Skills Section-->
+
+    <section class="skills" id="skills">
+        <div class="heading">
+            <span>--- other skills ---</span>
+            <h2>Highlight of my other skills</h2>
+        </div>
+
+        <div class="skills-container">
+            <div class="s-box">
+                <div class="smm">
+                    <img id="fyge" src="./images/fyge.png" alt="FYGE's Logo">
+                </div>
+                <h2>Content Creation & <br> Public Speaking</h2>
+                <h3>Conversational Content <br> and Talks</h3>
+                <a href="#">See Proof</a>
+            </div>
+
+            <div class="s-box">
+                <div class="smm">
+                    <img id="girl" src="./images/girl.png" alt="Girl">
+                </div>
+                <h2>Social Media <br> Management (SMM)</h2>
+                <h3>Organizational Profile</h3>
+                <a href="#">See Proof</a>
+            </div>
+
+            <div class="s-box">
+                <div class="smm">
+                    <img id="girl" src="./images/girl.png" alt="Girl">
+                </div>
+                <h2>Googling</h2>
+                <h3>Intelligent Research</h3>
+                <a href="#">See Proof</a </div>
+
+            </div>
+    </section>
+
+
+    <!--- Footer Section-->
+
+    <section id="contact">
+        <div class="footer">
+            <div class="main">
+                <div class="col">
+                    <h4>Menu</h4>
+
+                    <ul>
+                        <li><a href="#about-me">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1vyCrgHZdSxozbPMGvtnZUDHsKZWbTXlVSnfCSF3Zea8/edit?usp=sharing"
+                                target="_blank">Resume
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>My Services</h4>
+
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#" id="smm">Social Media <br> Management (SMM)</a></li>
+                        <li><a href="#">Content Creation</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Information</h4>
+
+                    <ul>
+                        <li><a href="#">My Blog</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Digital Products</a></li>
+                        <li><a href="#">YouTube Channel</a></li>
+                        <li><a href="#">Speaking Engagements</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Social Media</h4>
+                    <div class="socials">
+
+                        <a href="https://www.facebook.com/addsaryormee.eunex"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/climiradiroberts"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/TechieClimi_"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/euniceadewusic"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://mail.google.com/mail/euniceadewusic@gmail.com"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <p>made by Eunice Adewusi Climiradi - ALU'24 </p>
+    </section>
+
     <script src="./script.js"></script>
 </body>
 

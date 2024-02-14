@@ -1,5 +1,526 @@
+/* ------ Global Properties ------ */
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style-type: none;
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000; /* makes the hero image pass underneath the navbar when scrolling */
+}
+body {
+    background-color: #1c1a27;
+}
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    background-color: #f9004d;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+.nav-bar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8% 0 8%;
+    margin: auto;
+}
+.nav-bar .logo a {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.nav-bar .logo span {
+    color: #15141C;
+    font-size: 28px;
+}
+.nav-bar ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 3px 3px;
+}
+.nav-bar ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.nav-bar ul li a:hover {
+    color: #15141C;
+}
+.nav-bar ul li a.active, .nav-bar ul li a:hover {
+    color: #15141C;
+}
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid #f9004d;
+    background-color: #f9004d;
+    color: #eae7e7;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin: 12px 7px 10px;
+    transition: .4s;
+}
+#btn {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+}
+.btn:hover {
+    background-color: transparent;
+}
+#btn:hover {
+    background-color: #f9004d;
+}
+
+/*------- Home Page ------- */
+
+.hero {
+    display: flex;
+    background-color: #1c1a27;
+    color: #ffffff;
+    height: 100vh;
+}
+.hero .max-width { /* this will make all the hero content centralized */
+    margin: auto 0 auto 150px;
+}
+.hero-content {
+    line-height: 4rem;
+}
+.hero .hero-content .text-1 {
+    font-size: 27px;
+}
+.hero .hero-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.hero .hero-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+.hero .hero-content .text-3 span {
+    color: #f9004d;
+    font-weight: 500;
+}
+.pic {
+    width: 45%;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+.pic img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.pic:hover img {
+    left: 45%;
+}
+
+
+/* ------- Contact Us Page ------- */
+
+#contact-me {
+    width: 44%;
+    margin: auto;
+}
+
+#contact-me .max-width {
+    margin: 170px 0 0 0;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: none;
+    border: 2px solid #1c1a27;
+    border-radius: 7px;
+}
+
+/* ------ Registration Page ------ */
+
+#register {
+    width: 45%;
+    margin: auto;
+}
+#register .max-width {
+    margin: 150px 0 0 0;
+}
+.register-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.register-col input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border: 2px solid #1c1a27;
+    border-radius: 7px;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { /* to remove the up & down arrow signs for number */
+    -webkit-appearance: none;
+    margin: 0;
+}
+.dropbtn {
+    color: #757575;
+    padding: 16px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    box-sizing: border-box;
+    width: 803%;
+    margin-bottom: 17px;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+.dropbtn p:hover {
+    text-align: start;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute; /* the content shows below the button */
+    min-width: 160px;
+    background-color: #ffffff;
+    /* overflow: auto; to enable scroll on small screens */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #757575;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block; /* the texts becomes vertical */
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.contact {
+    padding-top: 220px;
+}
+
+/* ------- Login Page ------- */
+
+#login {
+    width: 42%;
+    margin: auto;
+}
+
+#login .max-width {
+    margin: 180px 0 0 0;
+}
+
+
+.login-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.login-col input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: none;
+    border: 2px solid #1c1a27;
+    border-radius: 7px;
+}
+
+/* ------ Hobbies Section ------ */
+
+.hobbies {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    color: #f1f1f1;
+    background-color: #252333;
+    margin: auto;
+    width: 80%;
+    border-radius: 7px;
+}
+.hobbies-content {
+    margin-bottom: 34px;
+}
+.hobbies-text {
+    margin-top: 45px;
+    text-align: left;
+}
+.hobbies-img img {
+    width: 55%;
+    height: auto;
+    margin: 45px 0 29px 160px;
+    max-width: 100%;
+}
+span {
+    color: #f9004d;
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+.hobbies-text h2 {
+    font-size: 1.4rem;
+    margin: .8rem 0 1.8rem;
+    color: #777;
+    font-weight: 300;
+    padding-top: 10px;
+}
+.hobbies-text p {
+    margin: .8rem 0 1.8rem;
+    line-height: 1.7;
+}
+.heading {
+    margin-top: 59px;
+    text-align: center;
+    color: #f1f1f1;
+}
+.heading span {
+    font-weight: 600;
+    color: #f9004d;
+}
+.heading h2 {
+    font-size: 1.7rem;
+}
+#fyge {
+    width: 29%;
+    height: auto;
+}
+#girl {
+    width: 35%;
+    height: auto;
+}
+#climi {
+    width: 29%;
+    height: auto;
+}
+
+/* -----Priorities Section----- */
+
+.priorities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.priorities-container {
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+.priorities .heading h2 {
+    color: #777;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-size: 1.4rem;
+}
+.p-box {
+    flex-basis: 31%;
+    padding: 20px 12px;
+    color: #dbdada;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 13px 0;
+    color: #f9004d;
+    letter-spacing: .8px;
+}
+
+/* -----Other Skills Section----- */
+
+.skills-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-container span{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+}
+.skills .heading h2 {
+    font-size: 1.4rem;
+    margin: .8rem 0 1.8rem;
+    color: #777;
+    font-weight: 300;
+}
+.s-box {
+    flex-basis: 31%; /* adjusted the content in equal sizes */
+    background-color: #252333;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+}
+.s-box:hover {
+    box-shadow: 0 0 20px 0px rgba(126, 112, 112, 0.2);
+}
+.s-box h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #f1f1f1;
+    line-height: 30px;
+}
+.s-box h3 {
+    color: #f9004d;
+    font-weight: 300;
+    line-height: 25px;
+}
+.s-box a {
+    color: #777;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+.smm {
+    width: 220px;
+    /* height: 220px; */
+}
+.content-creation, .smm, .research img {
+    width: 100%;
+    height: 100;
+    display: flex;
+    justify-content: center;
+}
+
+/* ----- Footer ----- */
+
+#contact {
+    margin: 59px 200px 19px;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap; /* makes the content horizontal */
+}
+.footer {
+    padding: 10px 0;
+    margin-bottom: 26px;
+}
+.col {
+    width: 25%; /* divides the content into 3 parts with spaces */
+}
+.col h4{
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    margin-bottom: 25px;
+    position: relative;
+}
+.col h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background-color: #f9004d;
+}
+.col ul li {
+    margin-bottom: 15px;
+}
+#smm {
+    line-height: 26px;
+}
+.col ul li a {
+    color: #777;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+.col ul li a:hover {
+    color: #f1f1f1;
+    transform: translateX(-12px);
+}
+.col .social {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col .social a {
+    height: 40px;
+    width: 40px;
+    background-color: #f9004d;
+    color: #f1f1f1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+.col .social a:hover {
+    transform: scale(1.2);
+    color: #f1f1f1;
+    background-color: #f9004d;
+}
+#contact p {
+    text-align: center;
+    padding: 10px 10px;
+    color: #757575;
+    text-transform: capitalize;
+}
+.login-footer {
+    padding-top: 5px;
+}
+.socials span {
+    color: #f9004d;
+    margin: 0 8px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.socials a {
+    color: #f9004d;
+    margin: 0 8px;
+    cursor: pointer;
+    padding: 18px 0;
 }
