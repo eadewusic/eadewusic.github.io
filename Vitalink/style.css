@@ -207,7 +207,7 @@ body{
 
 .container.active .toggle-left {
     transform: translateX(0);
-    background-image: url('../images/sign-up-vitalink.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your background image */
+    background-image: url('./images/sign-up-vitalink.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your background image */
     background-size: cover; /* Adjust the background size as needed */
     background-position: center; /* Adjust the background position as needed */
 }
@@ -215,7 +215,7 @@ body{
 .toggle-right{
     right: 0;
     transform: translateX(0);
-    background-image: url('../images/sign-in-vitalink.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your background image */
+    background-image: url('./images/sign-in-vitalink.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your background image */
     background-size: cover; /* Adjust the background size as needed */
     background-position: center; /* Adjust the background position as needed */
 }

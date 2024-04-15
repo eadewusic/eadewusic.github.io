@@ -276,7 +276,7 @@ color: #1B3C74;
   content: "";
   width: 20px;
   height: 20px;
-  background: url(../images/check.png) no-repeat;
+  background: url(./images/check.png) no-repeat;
   background-size: contain;
   float: left;
   margin-right: 10px;

@@ -252,16 +252,16 @@ button{
 }
 
 .card.first{
-    background-image: url(../images/doctor-3.png);
+    background-image: url(./images/doctor-3.png);
     border-radius: 10px;
 }
 
 .card.two{
-    background-image: url(../images/doctor-2.png);
+    background-image: url(./images/doctor-2.png);
 }
 
 .card.three{
-    background-image: url(../images/doctor-3.png);
+    background-image: url(./images/doctor-3.png);
 }
 
 .doctor-cards .text-container{
@@ -322,7 +322,7 @@ h4{
 /*quote*/
 
 .quote{
-    background: radial-gradient(rgba(31, 43, 108, 0.5), rgba(31, 43, 108, 0.4)),  url(../images/background-quote.png);
+    background: radial-gradient(rgba(31, 43, 108, 0.5), rgba(31, 43, 108, 0.4)),  url(./images/background-quote.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
