@@ -1,0 +1,708 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 6%;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+nav ul li a.active {
+  color: #17BBEF;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #bbbbbb;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #17BBEF;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: #17BBEF;
+  color: #fff;
+  border: 1px solid #17BBEF;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+  background: transparent;
+  color: #17BBEF;
+  border-color: #17BBEF;
+}
+
+
+section {
+  min-height: 100vh;
+  padding: 6rem 7% 2rem;
+}
+
+.home-txt .home-content {
+  max-width: 44rem;
+}
+
+.home-content h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 3.5rem;
+}
+
+.home-content p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+  color: #787878;
+}
+
+.btn {
+  display: inline-block;
+  padding: .6rem 3rem;
+  background-color: #17BBEF;
+  border-radius: .3rem;
+  color: #fff;
+  border: 1px solid transparent;
+  transition: .5s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #17BBEF;
+  border-color: #17BBEF;
+}
+
+.home-txt .hero-img-div {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.home-txt .hero-img-div .hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(4%); /*shifts the image to the right with lesser figures*/
+  margin-top: 8.7%;
+  width: 93%;
+}
+
+.hero-img img {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+/* -----Jambotron----- */
+.jambotron {
+  box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  text-align: center;
+  position: relative;
+  left: 50%; /* centralises the box*/
+  transform: translateX(-50%); /* this is to translate along the X-axis to bring the box back halfway so that it can be at the dead centre */
+  background-color: #17BBEF;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 10%;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.jambotron .jambotron-container {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin: auto;
+  padding: 20px 32px;
+}
+
+.jambotron-col p {
+  text-align: left;
+  margin-left: 9%;
+  margin-top: 5%;
+}
+
+#hrs {
+  margin-right: 23%;
+}
+
+#rpm {
+  margin-left: 2%;
+}
+
+/* --- Services Section --- */
+.services {
+  margin-top: 15px;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+#services-p {
+  display: flex;
+  justify-content: flex-end;
+  color: #787878;
+}
+
+.s-row {
+  margin-top: 5%;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.s-col {
+  flex-basis: 24%; /* adjusted the space between boxes */
+  border-radius: 10px;
+  padding: 20px 12px;
+}
+
+#s1 {
+  background-color: #FEEFEB;
+}
+
+#s2 {
+  background-color: #D1F1FC;
+}
+#s3 {
+  background-color: #F1F5E9;
+}
+
+#s4 {
+  background-color: #E9F7F8;
+}
+
+/* --- Patient Care Section --- */
+.p-care {
+  background-color: #f2f7ff;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+}
+
+#p-care-img img {
+  width: 100%;
+  height: 90%;
+}
+
+#p-care2 {
+  margin-left: 10%;
+  font-family: "Poppins", sans-serif;
+}
+
+#p-care2 h2 {
+  font-size: 12px;
+  color: #2AA7FF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+#p-care2 h3 {
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 3%;
+  font-family: "Poppins", sans-serif;
+}
+
+span {
+  color: #2AA7FF;
+  font-family: "Poppins", sans-serif;
+}
+
+#p-care-p {
+  font-size: 12px;
+  color: #77829D;
+  margin-top: 5%;
+}
+
+.check-row {
+margin-top: 8%;
+color: #1B3C74;
+}
+
+.check-col1::before, .check-col2::before, .check-col3::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(../images/check.png) no-repeat;
+  background-size: contain;
+  float: left;
+  margin-right: 10px;
+}
+
+.check-col2, .check-col3 {
+  margin-top: 3%;
+}
+
+/* --- Qualified Doctors Section --- */
+.slides-section {
+margin: 0;
+padding: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.slider {
+height: 500px;
+width: 1750px;
+overflow: hidden;
+}
+
+.slide {
+width: 500%;
+height: 500px;
+display: flex;
+}
+
+.slide input {
+display: none;
+}
+
+.st {
+width: 20%;
+transition: 2s;
+}
+
+.st img {
+height: 500px;
+width: 1150px;
+}
+
+.nav-m {
+position: absolute;
+width: 800px;
+margin-top: -40px;
+justify-content: center;
+display: flex;
+}
+
+.m-btn {
+border: 1px solid #17BBEF;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+margin-top: 5%;
+display: none;
+}
+
+.m-btn:not(:last-child){
+margin-right: 30px;
+}
+
+.m-btn:hover {
+background-color: #17BBEF;
+}
+
+#radio1:checked ~.first {
+margin-left: 0;
+}
+
+#radio2:checked ~.first {
+margin-left: -20%;
+}
+
+#radio3:checked ~.first {
+margin-left: -40%;
+}
+
+#radio4:checked ~.first {
+margin-left: -60%;
+}
+
+#radio5:checked ~.first {
+margin-left: -80%;
+}
+
+.nav-auto {
+position: absolute;
+width: 800px;
+display: flex;
+justify-content: flex-end;
+/* right: 43%; */
+right: 15%;
+}
+
+.nav-auto div {
+border: 1px solid #17BBEF;
+padding: 5px;
+border-radius: 10px;
+transition: 1s;
+margin-top: 63%;
+cursor: pointer;
+}
+
+.nav-auto div:not(:last-child) {
+margin-right: 30px;
+justify-content: flex-end;
+}
+
+#radio1:checked ~ .nav-auto .a-b1 {
+background-color: #17BBEF;
+}
+
+#radio2:checked ~ .nav-auto .a-b2 {
+background-color: #17BBEF;
+}
+
+#radio3:checked ~ .nav-auto .a-b3 {
+background-color: #17BBEF;
+}
+
+#radio4:checked ~ .nav-auto .a-b4 {
+background-color: #17BBEF;
+}
+
+#radio5:checked ~ .nav-auto .a-b5 {
+background-color: #17BBEF;
+}
+
+.qds {
+display: inline-block;
+padding: .5rem 1rem;
+background-color: #17BBEF;
+border-radius: .3rem;
+color: #fff;
+border: 1px solid transparent;
+transition: .5s ease;
+text-decoration: none;
+margin-left: 14%;
+}
+
+.qds:hover {
+background: transparent;
+color: #17BBEF;
+border-color: #17BBEF;
+}
+
+.qds-txt h2{
+font-size: 17px;
+font-family: "Poppins", sans-serif;
+}
+
+.qds-txt h3{
+font-size: 30px;
+font-family: "Poppins", sans-serif;
+}
+
+.qds-txt p{
+font-size: 14px;
+color: #C4C4C4;
+margin-top: 1%;
+bottom: 0;
+font-family: "Poppins", sans-serif;
+}
+
+/* --- Download App Section --- */
+
+.get-device{
+padding: 40px 40px;
+background: linear-gradient(81deg, #E7F0FF 9.01%, rgba(232, 241, 255, 0.47) 89.11%);
+position: relative;
+padding-top: 4.7%;
+margin-top: 2.5%;
+
+}
+.get-device h3 {
+font-size: 30px;
+line-height: 2.5rem;
+transform: translateY(-850%); /*adjust text to be where the arrow is, bigger value takes it up*/
+margin-left: 26%;
+font-family: "Poppins", sans-serif;
+}
+
+.das-content p {
+font-size: 1rem;
+transform: translateY(-2960%); /* 800 to be on exact spot as seen on Figma */
+margin-left: 26%;
+}
+
+.get-device .img1{
+bottom: 0;
+left: 0;
+width: 100%;
+pointer-events: none;
+overflow: hidden;
+}
+
+.get-device span{
+color: #17BBEF;
+}
+
+.get-device form{
+display: flex;
+align-items: center;
+justify-content: center;
+padding-block: 1rem;
+gap: 0.5rem;
+transform: translateY(-916%);
+margin-right: 6%;
+}
+
+#country-code{
+height: 40px;
+width: 70px;
+font-weight: 600;
+border: none;
+padding-left: 0.5rem;
+
+}
+.get-device input{
+height: 40px;
+width: 300px;
+border: none;
+padding: 10px;
+font-family: 'Sans Source 3', sans-serif;
+}
+
+.get-device input::placeholder{
+color: #B4B4BE;
+}
+
+.das-btns {
+margin-left: 40%;
+transform: translateY(-500%); /* smaller number to go down */
+}
+
+.das {
+margin-left: 3%;
+}
+
+#das-btn {
+padding: .7rem 1.5rem;
+background-color: #2d2d32;
+border-radius: .2rem;
+color: #fff;
+border: .1rem solid transparent;
+transition: .5s ease;
+text-decoration: none;
+font-size: 115%;
+}
+
+#das-btn:hover {
+background: transparent;
+color: #2d2d32;
+border-color: #2d2d32;
+}
+
+#sms-btn {
+width: 11%;
+height: 38px;
+color: #fff;
+background-color: #17BBEF;
+border-radius: .3rem;
+border: none;
+border: .1rem solid transparent;
+transition: .5s ease;
+text-decoration: none;
+}
+
+#sms-btn:hover {
+background: transparent;
+color: #17BBEF;
+border-color: #17BBEF;
+}
+
+/* .da-section {
+background-color: #f3f8ff;
+margin-top: 4%;
+}
+
+.das-content h3 {
+font-size: 30px;
+line-height: 2.5rem;
+transform: translateY(205%); adjust text to be where the arrow is, bigger value takes it up
+margin-left: 26%;
+}
+
+.das-content p {
+font-size: 1rem;
+transform: translateY(890%); 800 to be on exact spot as seen on Figma
+margin-left: 26%;
+}
+
+.das-img img {
+bottom: 0;
+left: 0;
+width: 100%;
+pointer-events: none;
+}
+
+.da-section .das-img-div {
+overflow: hidden;
+pointer-events: none;
+}
+
+.das-btns {
+margin-left: 40%;
+}
+
+.das {
+margin-left: 3%;
+}
+
+#das-btn {
+display: inline-block;
+padding: .7rem 1.5rem;
+background-color: #2d2d32;
+border-radius: .2rem;
+color: #fff;
+border: .1rem solid transparent;
+transition: .5s ease;
+text-decoration: none;
+font-size: 115%;
+}
+
+#das-btn:hover {
+background: transparent;
+color: #2d2d32;
+border-color: #2d2d32;
+}
+
+form {
+margin-left: 26%;
+transform: translateY(530%);
+}
+
+form select {
+height: 35px;
+font-size: 12px;
+}
+
+form input {
+height: 35px;
+width: 25%;
+}
+
+form button {
+height: 38px;
+width: 11%;
+margin-left: 2%;
+background-color: #17BBEF;
+border-radius: .3rem;
+color: #fff;
+border: .2rem solid transparent;
+transition: .5s ease; */
+/* text-decoration: none; */
+/* }
+
+form button:hover {
+background: transparent;
+color: #17BBEF;
+border-color: #17BBEF;
+}
+
+form button::placeholder {
+font-size: 12px;
+padding-left: 6%;
+color: #B4B4BE;
+} */
+
+/* --- Footer --- */
+footer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px 80px;
+  background-color: #17BBEF;
+  color: #fff;
+  gap: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 350;
+  font-size: 16px;
+}
+
+footer .vitalink p{
+  padding-bottom: 1rem;
+  width: 300px;
+  line-height: 25px;
+}
+
+.departments,
+.quick-links{
+  line-height: 40px;
+}
+
+.departments a,
+.quick-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.blog-post h5{
+  color: black;
+  padding-top: 2rem;
+}
+
+
+.blog-post p{
+  width: 200px;
+  padding-top: 1rem;
+}
+
+.hr hr {
+  width: 451%;
+  border: 0;
+  border-bottom: 1px solid #173E87;
+  transform: translateX(-6.3%);
+}
+
+footer .copyright{
+  margin-top: 9%;
+  transform: translateX(56%);
+  margin-bottom: -11%;
+  bottom: 0;
+}
